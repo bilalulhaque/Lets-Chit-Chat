@@ -1,0 +1,382 @@
+
+.signin-main{
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    margin-top: 40px;
+    margin-bottom: 40px;    
+}
+
+.logo{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.signin-heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sigin-heading>h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.signin-btn{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signin-btn>button{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.signin-social{
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-site-btns{
+    text-align: center;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-site-btns>div>i{
+    font-size: 40px !important;
+    cursor: pointer;
+}
+
+.fa-facebook-official{
+    color: #385898;
+}
+.fa-google{
+    color: red;
+}
+img{
+    font-size: 40px !important;
+}
+
+.signup-mail{
+    margin-top: 100px;
+    text-align: center;
+}
+.p-text{
+    color: lightslategray;
+    font-weight: 600;
+}
+.signup-mail>button{
+    background-color: white;
+    border: 0px;
+    outline-style: none !important;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.chat-main{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.users-column{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.currentUser{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    background-color: #e5e5e5;
+    border-right: 1px solid #949494;
+
+}
+.currentUser>div>i{
+    font-size: 40px;
+    color: #2c2f33;
+}
+#currentUserName{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#users-list{
+    height: 100%;
+    overflow-y: auto;
+    background-color: whitesmoke;
+}
+
+
+#users{
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#userName{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    color: #2c2f33;
+
+}
+
+
+
+#userName:hover{
+    background-color: #e5e5e5;
+
+}
+
+.fa-user-circle{
+    margin-right: 15px;
+    color: #2c2f33;
+    font-style: italic;
+}
+
+.chat-column{
+    width: 75%;
+    background-color: #bfbebe;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.chat-header{
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+#friendNameHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#friendName{
+    font-size: 20px;
+}
+
+
+
+.chat-box{
+    background-color: #bfbebe;
+    overflow-y: auto;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 80px;
+}
+
+#startPage{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+#startPage>div>i{
+    font-size: 20vw;
+    color: #2c2f33;
+}
+
+.chat-compose-box{
+    background-color: #e5e5e5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+}
+
+.chat-compose-box>input{
+    width: 90%;
+    
+}
+
+.chat-compose-box>button{
+    width: auto;
+    background-color: #7289da;
+}
+.chat-compose-box>button:hover{
+    background-color: #7289da;
+}
+
+.chat-box>ul>li{
+    list-style: none;
+}
+
+
+
+#sendMsgs{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+
+    
+
+
+}
+.send{
+    /* for right */
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-right: 80px;
+    padding-bottom: 22px;
+    padding-left: 10px;
+    position: relative;
+    display: inline-block;
+    margin-top: 6px;
+    overflow-wrap: normal;
+    text-align: left;
+    background-color: #AFBCEA;
+
+    word-break: break-all;
+
+}
+
+
+
+#receiveMsgs{
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.receive{
+    /* For left */
+    background-color: whitesmoke !important;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-bottom: 22px;
+    padding-right: 80px;
+    position: relative;
+    display: inline-block;
+    margin-top: 6px;
+    overflow-wrap: normal;
+
+    word-break: break-all;
+
+
+
+}
+
+
+.timing{
+    position: absolute;
+    right: 10px;
+    bottom: 3px;
+    font-size:12px;
+}
+
+#show-users{
+    text-decoration: none;
+    color: white;
+
+}
+#backToUsers{
+    font-size: 30px;
+}
+
+.chat-header>button{
+    background-color: #7289da;
+    width: auto;
+}
+.chat-header>button:hover{
+    background-color: #7289da;
+}
+
+
+@media only screen and (max-width:768px){
+    .signin-main{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width:575px){
+    .signin-main{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:1070px){
+    .chat-column{
+        width: 100%;        
+    }
+    .users-column{
+        width: 0;
+    }   
+}
+
+@media only screen and (min-width:1070px){
+    #show-users{
+        display: none;
+    }
+    #backToUsers{
+        display: none;
+    }
+}
+
+
+   
+@media only screen and (max-width:798px){
+    .chat-compose-box>input{
+        /* width: 80%; */
+        width: 80%;
+        
+    }
+}
+
+@media only screen and (max-width:390px){
+    .chat-header>div,.chat-header>button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #friendNameHeader{
+        display: flex;
+        justify-content: center;
+    }
+    .fa-arrow-left{
+        margin:0 auto;
+        margin-bottom: 5px !important;
+    }
+    #message,#sendBtn{
+        width: 100%;
+    }
+    #message{
+        margin-bottom: 8px;
+    }
+
+}

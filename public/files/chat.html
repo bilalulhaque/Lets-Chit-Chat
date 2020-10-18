@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets ChitChat | Chat App</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/icon.png">
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyD6kjdkPNLE_ypu2AscvXknGdBzTtHQTro",
+        authDomain: "lets-chitchat.firebaseapp.com",
+        databaseURL: "https://lets-chitchat.firebaseio.com",
+        projectId: "lets-chitchat",
+        storageBucket: "lets-chitchat.appspot.com",
+        messagingSenderId: "212020576157",
+        appId: "1:212020576157:web:2a05fc6e5b8e6896a87974",
+        measurementId: "G-E5MZLH0440"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+    </script>
+</head>
+<body onload="fetchUsersList()">
+
+    <div class="chat-main" id="chatMain">
+
+        <div class="users-column" id="usersColumn">
+
+            <div class="currentUser">
+                
+                <div><i class="fa fa-user-circle" aria-hidden="true"></i></div>
+                <div id="currentUserName" style="color: #2c2f33;"></div>
+            </div>
+            <div id="users-list" >
+                <ul id="users">
+                </ul>
+            </div>
+        </div>
+
+        <div class="chat-column" id="chatColumn">
+
+            <div class="chat-header" id="chatHeader">
+               <i class="fa fa-arrow-left" id="backToUsers" onclick="backToUsers()" aria-hidden="true"></i>
+                <div id="friendNameHeader">
+                    <div class="friendIcon"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 40px;"></i></div>
+                    <div id="friendName"></div>
+                </div>
+                <button type="button" class="btn btn-secondary sign-out" onclick="signOut()">Log Out</button>
+            </div>
+            
+            <div class="chat-box" style="display: none;" id="chatBox">
+            </div>
+
+            <div id="startPage" >
+                <div><i class="fa fa-comments" aria-hidden="true"></i></div>
+                <div><h2 style="color: #2c2f33;">Lets talk</h2></div>
+                <a href="#" onclick="showUsers()" id='show-users' style="color: #7289da;">Show Users</a>
+            </div>
+
+            <div class="chat-compose-box">
+                <input class="form-control mr-sm-2" type="text" placeholder="Type a message" id="message">
+                <button type="button" class="btn btn-secondary" onclick="sendMessage()" id="sendBtn">SEND</button>
+  
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <script src="../js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
